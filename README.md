@@ -1,2 +1,3 @@
-# gatsby-strapi-back
-static blog with Gastby and Strapi
+# Strapi application
+
+A quick description of your strapi application

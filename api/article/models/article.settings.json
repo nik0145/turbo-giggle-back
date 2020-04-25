@@ -1,4 +1,7 @@
 {
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "articles",
   "info": {
     "name": "article"
   },
@@ -20,11 +23,9 @@
       "required": false
     },
     "author": {
+      "via": "articles",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "articles"
+      "model": "user"
     }
-  },
-  "connection": "default",
-  "collectionName": "articles"
+  }
 }

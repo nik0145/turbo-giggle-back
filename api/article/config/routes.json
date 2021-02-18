@@ -5,7 +5,7 @@
       "path": "/articles",
       "handler": "article.find",
       "config": {
-        "policies": ["global::isPolicies"]
+        "policies": []
       }
     },
     {

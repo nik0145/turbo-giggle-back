@@ -3,11 +3,13 @@
   "connection": "default",
   "collectionName": "articles",
   "info": {
-    "name": "article"
+    "name": "article",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -21,6 +23,10 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "author": {
+      "plugin": "admin",
+      "model": "user"
     }
   }
 }
